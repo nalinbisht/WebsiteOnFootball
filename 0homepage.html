@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<img src="logo1.png"alt="logo" align="right">
+<h1 align="middle">FOOTBALL</h1>
+
+<h2 align="middle" >WORK HARD! PLAY HARD! </h2>
+
+<br>
+<style>
+body 
+   {
+    background-color: black;
+   }
+h1 {
+    color:silver;
+    font-family: comic sans MS;
+    font-size: 55px;
+   }
+h2 {
+    color:silver;
+    font-family: arial;
+    font-size: 25px;
+   }
+
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: silver;
+    text-align: right;
+    padding: 40px;
+    text-decoration : none;
+    font-family: trebuchet MS;
+}
+li a:hover {
+    background-color: #111;
+}
+  
+
+</style>
+</head>
+<body>
+
+<ul>
+  
+  <li><a href="7topmost players.html">Topmost Players</a></li> 
+  <li><a href="6current events.html">Current Events</a></li>
+  <li><a href="4clubs fan following.html">Clubs Fan Following</a></li>
+  <li><a href="3clubs.html">Clubs</a></li>
+  <li><a href="2history.html">History</a></li>
+  <li><a href="1about.html">About</a></li>
+</ul>
+
+
+<section>
+  <img class="mySlides" src="xyz41.jpg"
+   style="width:100%">
+  <img class="mySlides" src="xyz40.jpg"
+  style="width:100%">
+  <img class="mySlides" src="xyz0.jpg"
+  style="width:100%">
+</section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
